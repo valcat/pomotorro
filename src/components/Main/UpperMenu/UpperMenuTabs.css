@@ -1,0 +1,24 @@
+.pomo-card_tabs {
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 1.063rem;
+}
+
+.pomo-card_tabs .tab {
+  padding: 0 0.188rem;
+  color: var(--light-grey-text-color);
+}
+
+.pomo-card_tabs .active {
+  color: var(--black-color);
+  pointer-events: none;
+}
+
+.pomo-card_tabs:checked .active {
+  color: var(--black-color);
+  pointer-events: none;
+}
+
+.pomo-card_tabs:hover {
+  color: var(--light-grey-text-color-hover);
+}

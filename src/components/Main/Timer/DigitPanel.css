@@ -1,0 +1,13 @@
+.digits-panel {
+  box-sizing: border-box;
+  background-color: var(--light-grey-background-color);
+  border-radius: 0.313rem;
+  font-size: 3.75rem;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  padding-top: 0.75rem;
+}

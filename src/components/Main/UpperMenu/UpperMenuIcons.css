@@ -1,0 +1,9 @@
+.pomo-card_icons {
+  box-sizing: border-box;
+}
+
+.pomo-card_icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--black-color);
+}

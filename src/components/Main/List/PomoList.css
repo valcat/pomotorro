@@ -1,0 +1,65 @@
+.pomo-list {
+  box-sizing: border-box;
+  background-color: var(--light-grey-background-color);
+  border-radius: 0.313rem;
+  font-size: 3.75rem;
+  font-weight: 700;
+
+  padding: 0.625rem;
+  max-height: inherit;
+  height: 18.75rem;
+  text-align: left;
+/*  overflow: scroll;*/
+  scrollbar-gutter: auto;
+  overflow-x: hidden;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0.125rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #afaeae;
+  border-radius: 0.313rem;
+  border: 0.063rem solid #afaeae;
+  border: 0.063rem solid #afaeae;
+}
+
+.pomo-list-header {
+  display: flex;
+  font-weight: 700;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-left: 0.125rem;
+  color: var(--light-grey-text-color);
+}
+
+.pomo-card_icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  padding-left: 0.08rem;
+  padding-right: 0.08rem;
+  color: black;
+}
+
+.empty-pomo-list {
+  box-sizing: border-box;
+  font-size: 0.938rem;
+  color: #978b8b;
+  padding-left: 1.563rem;
+  padding-top: 0.438rem;
+  margin-bottom: 0.188rem;
+  position: relative;
+  top: 6.6rem;
+}
+
+.empty-pomo-list_icon {
+  position: absolute;
+  top: 0.438rem;
+  left: 1.5rem;
+}
+
+.empty-pomo-list div:last-of-type {
+  padding-left: 1.5rem;
+}

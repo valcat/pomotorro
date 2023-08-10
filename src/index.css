@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+html {
+  overflow-x: hidden;
+}
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--black-color);
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --window-background-color:  rgba(236, 246, 250, 1);
+  --light-grey-background-color: rgba(237, 237, 237, 1);
+  --white-background-color: #ffffff;
+
+  --black-color: rgb(74, 77, 78);
+  --white-color: #ffffff;
+  --light-grey-text-color: rgba(163, 163, 163, 1);;
+  --light-grey-text-color-hover: rgb(183, 181, 181);
+
+  --dark-grey-color: rgba(163, 163, 163, 1);
+  --scarlet-red-color: rgb(230, 97, 88);
+  --light-lilac-color: rgba(49, 81, 157, 0.53);
+
+  --grey-object-border: 1.5px solid rgba(0, 0, 0, 0.35);
+  --light-grey-object-shadow: 3px 4px 4px 3px rgba(0, 0, 0, 0.08);
+
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+  min-width: 20rem;
+  min-height: 100vh;
+  background-color: var(--window-background-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 150%;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  width: 100%;
+  text-align: left;
+  margin-top: 3rem;
+}

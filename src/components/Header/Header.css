@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.pomo-logo {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.pomo-logo img:hover {
+  filter: drop-shadow(0 0 0.8em #bb2626);
+}
+
+.pomo-logo img {
+  margin-right: 0.25rem;
+}
+
+.oval-button {
+  box-sizing: border-box;
+  color: black;
+  font-size: 0.938rem;
+  display: flex;
+  align-items: center;
+  height: 2.813rem;
+  padding: 1.25rem;
+  background: white;
+  border: 0.094rem solid rgba(0, 0, 0, 0.3);
+  border-radius: 2.5rem;
+  box-shadow: 0.188rem 0.25rem 0.25rem 0.188rem rgba(0, 0, 0, 0.08);
+}
+
+.user-icon {
+  width: 0.938rem;
+  height: 0.938rem;
+  color: grey;
+  padding-right: 0.625rem;
+}

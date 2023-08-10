@@ -1,0 +1,17 @@
+#root {
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media  (min-width: 768px) {
+  #root  {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #root  {
+    padding: 1.3rem;
+  }
+}

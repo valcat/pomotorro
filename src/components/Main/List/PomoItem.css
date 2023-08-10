@@ -1,0 +1,46 @@
+.pomo-item {
+  box-sizing: border-box;
+
+  background-color: rgb(225, 225, 225);
+  font-size: 0.938rem;
+  border-radius: 0.313rem;
+  padding-left: 0.5rem;
+  height: 2.188rem;
+  padding-top: 0.438rem;
+  margin-bottom: 0.27rem;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+
+.pomo-item .pomo-text {
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 78%;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.pomo-item_icons {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.25rem;
+}
+
+.pomo-item_icons div {
+  display: inline-block;
+  padding: 0 0.156rem;
+  cursor: pointer;
+}
+
+.pomo-item-button {
+  filter: invert(80%) sepia(0%) saturate(0%) hue-rotate(356deg) brightness(94%)
+    contrast(81%);
+}
+
+@media screen and (pointer: coarse) {
+  .pomo-item_icons div {
+    padding: 0 0.25rem;
+  }
+}

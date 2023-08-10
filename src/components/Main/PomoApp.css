@@ -1,0 +1,46 @@
+.pomo-card {
+  box-sizing: border-box;
+  width: 18.75rem;
+  max-height: 37.5rem;
+  margin: auto;
+
+  margin-bottom: 7rem;
+  text-align: center;
+  background: var(--white-background-color);
+  border: var(--grey-object-border);
+  box-shadow: var(--light-grey-shadow);
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .pomo-card {
+    margin-top: 6.25rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .pomo-card {
+    margin-top: 2.5rem;
+  }
+}
+
+.pomo-card_header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.313rem;
+}
+
+.svg-filter-grey {
+  filter: invert(70%) sepia(0%) saturate(0%) hue-rotate(356deg) brightness(94%) contrast(91%);
+}
+
+.svg-filter-black {
+  filter: invert(0%) sepia(9%) saturate(7497%) hue-rotate(89deg) brightness(92%) contrast(96%);
+}
+
+.display-none {
+  display: none;
+}
+
+

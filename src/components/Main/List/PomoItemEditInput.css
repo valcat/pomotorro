@@ -1,0 +1,40 @@
+.pomo-form__input {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  background-color: rgb(221, 221, 230);
+  height: 2.188rem;
+  width: 100%;
+  padding-left: 1.75rem;
+  border: none;
+  transition: all 0.3s;
+  z-index: 5;
+  padding-top: 0.25rem;
+  margin-bottom: 0.188rem;
+  color: rgb(74, 77, 78);
+  font-size: 0.938rem;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.pomo-item-edit-input {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.pomo-item-edit-input:focus {
+  outline: none;
+}
+
+form {
+  position: relative;
+}
+
+.pomo-icon {
+  position: absolute;
+  z-index: 55;
+  left: 0.5rem;
+  top: 0.438rem;
+}
