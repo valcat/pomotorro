@@ -26,7 +26,7 @@ The Pomotorro App is a simple productivity tool based on the Pomodoro Technique,
 
 ## Get Started
 
-🚀 You can access the app [here](https://effervescent-palmier-9455f0.netlify.app/).
+➡️ You can access the app [here](https://effervescent-palmier-9455f0.netlify.app/).
 
 
 ## Local installation and configuration
