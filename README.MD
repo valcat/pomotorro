@@ -23,8 +23,8 @@ The Pomotorro App is a simple productivity tool based on the Pomodoro Technique,
 
 ## Local installation and configuration
 
-1. Clone the repository: `git clone git@github.com:valcat/pomotorro-app.git`
-2. Navigate to the project directory: `cd pomotorro-app`
+1. Clone the repository: `git clone git@github.com:valcat/pomotorro.git`
+2. Navigate to the project directory: `cd pomotorro`
 3. Install dependencies: `npm install`
 4. You can customize session and break duration according to your preferences by modifying the Constants.js file
 
