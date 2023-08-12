@@ -25,3 +25,6 @@ dist-ssr
 __pycache__
 venv/
 .env
+
+/coverage.data
+/coverage/
