@@ -2,7 +2,6 @@ import {describe, it, expect, vi} from 'vitest';
 import {fireEvent, screen} from '@testing-library/react';
 import {renderWithProviders} from '@/test/reactTestUtils.jsx';
 import {BrowserRouter} from 'react-router-dom'
-import '@testing-library/jest-dom/extend-expect';
 
 import PomoApp from '@components/Main/PomoApp.jsx';
 import {POMODORO_TIME} from '@components/Constants.js';
