@@ -6,7 +6,7 @@ import { addPomodoro, showPomodoroSaveForm } from '@/store/pomodoroSlice';
 import './SavePomodoroForm.css';
 import { setRemainingTimeToStartPoint, toggleTimerMode } from '@/store/pomodoroSlice';
 import { POMODORO_MODE, POMODORO_TIME } from '@components/Constants';
-import closeIcon from '@/assets/close-btn.svg'
+import closeIcon from '@/assets/close-btn.svg';
 
 export default function SavePomodoroForm() {
   const pomodoroIsDone = useSelector((state) => state.pomodoroIsDone);

@@ -1,7 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { MAIN_SCREEN, POMODORO_MODE, POMODORO_TIME } from '../components/Constants';
-import {filterByToday} from '@/helpers/helpers.js';
-import {useSelector} from 'react-redux';
+import { filterByToday } from '@/helpers/helpers.js';
 
 export const initialState = {
   mode: POMODORO_MODE,
@@ -36,9 +35,6 @@ export const pomodoroSlice = createSlice({
     },
     toggleSoundOn: (state, action) => {
       state.soundOn = action.payload;
-    },
-    togglePlayerOn: (state, action) => {
-      state.playerOn = action.payload;
     },
     savePomodoroStartDate: (state, action) => {
       state.currentPomodoroStartDate = action.payload;
@@ -86,7 +82,6 @@ export const {
   toggleTimer,
   showPomodoroSaveForm,
   toggleSoundOn,
-  togglePlayerOn,
   savePomodoroStartDate,
   addPomodoro,
   cleanTodaysList,

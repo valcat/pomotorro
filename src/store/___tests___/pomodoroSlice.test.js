@@ -3,7 +3,7 @@ import reducer, {
   toggleTimerMode, updateRemainingTime,
   setRemainingTimeToStartPoint, toggleTimer, toggleSoundOn, showPomodoroSaveForm,
   savePomodoroStartDate, addPomodoro, addPomodoroInEditTable, toggleInEditTaskMode,
-  setEditedTaskIndex, setIsLoggedIn
+  setEditedTaskIndex
 } from '../pomodoroSlice';
 import { POMODORO_MODE, POMODORO_TIME, BREAK_MODE, BREAK_TIME } from '../../components/Constants';
 

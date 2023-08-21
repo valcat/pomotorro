@@ -1,10 +1,10 @@
-import {describe, it, expect, vi} from 'vitest';
-import { screen, waitFor} from '@testing-library/react';
-import {renderWithProviders} from '@/test/reactTestUtils.jsx';
-import {BrowserRouter} from 'react-router-dom'
+import {describe, it, expect } from 'vitest';
+import { screen } from '@testing-library/react';
+import { renderWithProviders } from '@/test/reactTestUtils.jsx';
+import { BrowserRouter } from 'react-router-dom'
 import userEvent from "@testing-library/user-event";
-import {PomoItemEditInput} from '@components/Main/List/PomoItemEditInput.jsx';
-import {POMODORO_TIME} from '@components/Constants.js';
+import { PomoItemEditInput } from '@components/Main/List/PomoItemEditInput.jsx';
+import { POMODORO_TIME } from '@components/Constants.js';
 
 describe('PomoItemEditInput check', () => {
   it('should', async ()=>  {

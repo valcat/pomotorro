@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 import PomoApp from './components/Main/PomoApp';
 
 function App() {
-
   return (
     <>
       <div className="App">

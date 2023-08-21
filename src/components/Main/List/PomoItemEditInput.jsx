@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import './PomoItemEditInput.css';
-import {escapeAndMouseClickHandler} from '@/helpers/helpers.js';
+import { escapeAndMouseClickHandler } from '@/helpers/helpers.js';
 
 export function PomoItemEditInput({ value, onSave }) {
   const [taskName, setTaskName] = useState(value);

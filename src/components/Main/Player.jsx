@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import clockSound from '@/assets/sounds/clock-sound.wav';
+import clockSound from '@/assets/sounds/clock-sound.mp3';
 
 if (document.audioPlayer === undefined) {
   document.audioPlayer = new Audio(clockSound);
