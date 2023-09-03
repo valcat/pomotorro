@@ -85,13 +85,13 @@ it('it should update currentPomodoroStartDate', () => {
 
 it('it should add pomodoro to listOfPomodoros', () => {
   expect(reducer(undefined, addPomodoro({
-    name: "reading a book",
-    date: "2023-06-12T07:16:43.203000"
+    name: 'reading a book',
+    date: '2023-06-12T07:16:43.203000'
   }))).toMatchObject(
     {
       listOfPomodoros: [{
-        name: "reading a book",
-        date: "2023-06-12T07:16:43.203000"
+        name: 'reading a book',
+        date: '2023-06-12T07:16:43.203000'
       }]
     }
   )
@@ -99,24 +99,24 @@ it('it should add pomodoro to listOfPomodoros', () => {
 
 it('it should add two pomodoros to listOfPomodorosInEditTable', () => {
   expect(reducer(undefined, addPomodoroInEditTable([{
-    _id: "6486e4933aeb1694928d488f",
-    name: "reading a book",
-    date: "2023-06-12T07:16:43.203000"
+    _id: '6486e4933aeb1694928d488f',
+    name: 'reading a book',
+    date: '2023-06-12T07:16:43.203000'
   }, {
-    _id: "6486e4933aeb1694928d458z",
-    name: "coding api",
-    date: "2023-06-12T09:16:43.203000"
+    _id: '6486e4933aeb1694928d458z',
+    name: 'coding api',
+    date: '2023-06-12T09:16:43.203000'
   }]))).toMatchObject(
     {
       listOfPomodorosInEditTable: [{
 
-        _id: "6486e4933aeb1694928d488f",
-        name: "reading a book",
-        date: "2023-06-12T07:16:43.203000"
+        _id: '6486e4933aeb1694928d488f',
+        name: 'reading a book',
+        date: '2023-06-12T07:16:43.203000'
       }, {
-        _id: "6486e4933aeb1694928d458z",
-        name: "coding api",
-        date: "2023-06-12T09:16:43.203000"
+        _id: '6486e4933aeb1694928d458z',
+        name: 'coding api',
+        date: '2023-06-12T09:16:43.203000'
       }
       ]
     }

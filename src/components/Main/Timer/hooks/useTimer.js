@@ -21,8 +21,8 @@ const useTimer = () => {
     if (timerOn) {
       setTitle(formatTimeIntoString(remainingTime));
     }
-    document.title = DOCUMENT_TITLE;
-  }, [remainingTime]);
+    document.title = title;
+  }, [remainingTime, title]);
 
   useEffect(() => {
     if (timerOn && remainingTime === 0) {
@@ -58,7 +58,8 @@ const useTimer = () => {
         : BREAK_TIME
     ));
     dispatch(toggleTimer(false));
-    dispatch(savePomodoroStartDate({}))
+    dispatch(savePomodoroStartDate({}));
+    setTitle(DOCUMENT_TITLE);
   }
 
   function toggle() {

@@ -45,7 +45,7 @@ export const pomodoroSlice = createSlice({
     addPomodoro: (state, action) => {
       state.listOfPomodoros.push(action.payload)
     },
-    cleanTodaysList: (state, action) => {
+    cleanTodaysList: (state) => {
       state.listOfPomodoros = filterByToday(state.listOfPomodoros);
     },
     addPomodoroInEditTable: (state, action) => {

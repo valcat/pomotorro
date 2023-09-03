@@ -10,7 +10,15 @@ module.exports = {
   // Add any additional rules or overrides here
   rules: {
     // Example rule: enforce using double quotes for strings
-    'quotes': ['error', 'double'],
+    'quotes': ['error', 'single'],
     // Add more rules here as needed
   },
+  parserOptions: {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  plugins: ["react", "react-hooks"],
 };
