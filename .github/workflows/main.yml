@@ -1,0 +1,75 @@
+name: Code Quality and Security Checks
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  eslint:
+    name: ESLint Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run ESLint
+        run: npx eslint .
+        working-directory: ${{ github.workspace }}
+
+  stylelint:
+    name: Stylelint Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Create Stylelint Configuration
+        run: touch .stylelintrc.json
+        working-directory: ${{ github.workspace }}
+
+      - name: Install Stylelint as a Dev Dependency
+        run: npm install --save-dev stylelint
+        working-directory: ${{ github.workspace }}
+
+      - name: Run Stylelint
+        run: npx stylelint "src/**/*.css"
+        working-directory: ${{ github.workspace }}
+
+  npm_audit:
+    name: NPM Audit
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run npm audit
+        run: npm audit
+        working-directory: ${{ github.workspace }}
