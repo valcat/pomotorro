@@ -3,7 +3,7 @@ name: Code Quality and Security Checks
 on:
   push:
     branches:
-      - master
+      - '**'
 
 jobs:
   eslint:
