@@ -22,7 +22,7 @@ export function formatTimeIntoString(remainingTime) {
 export default function Timer() {
   return (
     <div>
-      <DigitPanel></DigitPanel>
+      <DigitPanel />
       <StartStopButton />
     </div>
   );

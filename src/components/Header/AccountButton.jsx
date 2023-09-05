@@ -17,7 +17,7 @@ export default function AccountButton() {
         <Link to="/signin">
           <button className="oval-button">
             <img className="user-icon" src="src/assets/user-icon.svg"></img>
-            {'Sign in'}
+            Sign in
           </button>
         </Link>
       )}

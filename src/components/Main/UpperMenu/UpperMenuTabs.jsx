@@ -13,8 +13,7 @@ export default function UpperMenuTabs() {
   return (
     <div className="pomo-card_tabs" >
       <span
-        style={{ cursor: 'pointer' }}
-        className={`tab ${mode === POMODORO_MODE ? `active` : ''}`}
+        className={`tab ${mode === POMODORO_MODE ? 'active' : ''}`}
         onClick={() => {
           if (!timerOn) {
             dispatch(toggleTimerMode(POMODORO_MODE));
@@ -25,8 +24,7 @@ export default function UpperMenuTabs() {
         work
       </span>
       <span
-        style={{ cursor: 'pointer' }}
-        className={`tab ${mode === POMODORO_MODE ? '' : `active`}`}
+        className={`tab ${mode === POMODORO_MODE ? '' : 'active'}`}
         onClick={() => {
           if (!timerOn) {
             dispatch(toggleTimerMode(BREAK_MODE));

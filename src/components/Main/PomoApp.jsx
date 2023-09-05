@@ -13,7 +13,7 @@ export default function PomoApp() {
 
   return (
     <>
-      <Player></Player>
+      <Player />
       {pomodoroIsDone ? (
         <SavePomodoroForm />
       ) : (

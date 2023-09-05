@@ -5,6 +5,7 @@
 }
 
 .pomo-card_tabs .tab {
+  cursor: pointer;
   padding: 0 0.188rem;
   color: var(--light-grey-text-color);
 }

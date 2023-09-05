@@ -15,12 +15,12 @@ export default function PomoList() {
       <div className="pomo-list-header">
         <div>done today ({list.length})</div>
       </div>
-      <Cleaner></Cleaner>
+      <Cleaner />
       <div className="pomo-list">
         {list.length ? (
           list.map((task, i) => {
             const inEditMode = i === editedTaskIndex;
-            return <PomoItem taskObject={task} i={i} key={i} inEditMode={inEditMode} id={list[i]._id} screen="main"/>;
+            return <PomoItem taskObject={task} i={i} key={i} inEditMode={inEditMode}  screen="main"/>;
           })
         ) : (
           <div className="empty-pomo-list">
@@ -28,7 +28,7 @@ export default function PomoList() {
               <img src={coffeeIcon} alt="coffee-icon"/>
             </div>
             <div>
-              {'nothing done today yet...'}
+              nothing done today yet...
             </div>
           </div>
         )}
