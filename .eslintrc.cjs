@@ -6,19 +6,21 @@ module.exports = {
     es2021: true,
   },
   // Define your project's coding standards and rules
-  extends: 'eslint:recommended',
+  extends: [ 'eslint:recommended', 'plugin:react/recommended' ],
   // Add any additional rules or overrides here
   rules: {
-    // Example rule: enforce using double quotes for strings
+    // Rule: enforce using single quotes for strings
     'quotes': ['error', 'single'],
     // Add more rules here as needed
+    'react/react-in-jsx-scope': 'off',
+    'react/prop-types': 'off'
   },
   parserOptions: {
-    "ecmaVersion": 12,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
+    'ecmaVersion': 12,
+    'sourceType': 'module',
+    'ecmaFeatures': {
+      'jsx': true
     }
   },
-  plugins: ["react", "react-hooks"],
+  plugins: ['react', 'react-hooks'],
 };

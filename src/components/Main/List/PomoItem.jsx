@@ -6,7 +6,7 @@ import './PomoItem.css';
 import editIcon from '@/assets/edit-pomo.svg';
 import trashIcon from '@/assets/trash-icon.svg';
 
-const Item = ({ name, index, id, screen }) => {
+const Item = ({ name, index, screen }) => {
   const dispatch = useDispatch();
 
   return (
@@ -33,7 +33,7 @@ const Item = ({ name, index, id, screen }) => {
   );
 };
 
-export function PomoItem({ taskObject, i, inEditMode, id, screen }) {
+export function PomoItem({ taskObject, i, inEditMode, screen }) {
   const dispatch = useDispatch();
 
   const saveTask = (pomoName) => {
@@ -52,7 +52,7 @@ export function PomoItem({ taskObject, i, inEditMode, id, screen }) {
 
   return (
     <div className="pomo-item" key={i}>
-      {inEditMode ? <Input text={taskObject.name} /> : <Item name={taskObject.name} index={i} id={id} screen={screen} />}
+      {inEditMode ? <Input text={taskObject.name} /> : <Item name={taskObject.name} index={i} screen={screen} />}
     </div>
   );
 }

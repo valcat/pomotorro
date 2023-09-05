@@ -75,7 +75,6 @@ export const selectTodaysPomos = (state) => state.listOfPomodoros
 export const selectEditedTaskIndex = (state) => state.editedTaskIndex;
 
 export const {
-  setUserLogin,
   toggleTimerMode,
   setRemainingTimeToStartPoint,
   updateRemainingTime,
@@ -90,7 +89,6 @@ export const {
   deleteTask,
   toggleInEditTaskMode,
   setEditedTaskIndex,
-  setIsLoggedIn,
   setToInitialState
 } = pomodoroSlice.actions;
 

@@ -1,4 +1,4 @@
-import {describe, it, expect, vi} from 'vitest';
+import {describe, it, expect} from 'vitest';
 import {fireEvent, screen} from '@testing-library/react';
 import {renderWithProviders} from '@/test/reactTestUtils.jsx';
 import {BrowserRouter} from 'react-router-dom'
@@ -18,7 +18,7 @@ describe('', () => {
     expect(title).toBeInTheDocument();
   })
 
-  it('should render 25\:00', () => {
+  it('should render 25:00', () => {
     renderWithProviders(<BrowserRouter><PomoApp/> </BrowserRouter>, {
       preloadedState: {
         pomodoroIsDone: false,
@@ -26,7 +26,7 @@ describe('', () => {
         remainingTime: POMODORO_TIME,
       }
     });
-    const time = screen.getByText(/25\:00/i);
+    const time = screen.getByText(/25:00/i);
     expect(time).toBeInTheDocument();
   })
 
