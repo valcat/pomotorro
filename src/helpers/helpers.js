@@ -13,9 +13,10 @@ const filterByToday = (array) => {
 
 const escapeAndMouseClickHandler = function ({onSave, taskName, evt}) {
   evt = evt || window.event;
-  if (evt.type === 'keydown' && (evt.key === 'Escape' || evt.key === 'Esc')) {
-    onSave(taskName);
-  } else if (evt.type === 'mousedown') {
+  const isEscapeKeyPressed =  evt.type === 'keydown' && (evt.key === 'Escape' || evt.key === 'Esc');
+  const isMouseEvent = evt.type === 'mousedown';
+
+  if (isEscapeKeyPressed  || isMouseEvent) {
     onSave(taskName);
   }
 };

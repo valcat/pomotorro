@@ -20,7 +20,7 @@ export function PomoItemEditInput({ value, onSave }) {
     document.addEventListener('keydown', handleEscapeAndMouseClick);
 
     const handleOutsideClick = (event) => {
-      if (editInputRef.current && !editInputRef.current.contains(event.target)) {
+      if (editInputRef.current?.contains(event.target) === false) {
         handleEscapeAndMouseClick(event);
       }
     };

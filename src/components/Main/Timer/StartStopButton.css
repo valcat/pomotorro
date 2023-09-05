@@ -1,4 +1,6 @@
 .start-button {
+  cursor: pointer;
+  padding-left: 24%;
   box-sizing: border-box;
   background-color: var(--scarlet-red-color);
   color: var(--white-color);
@@ -16,6 +18,11 @@
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   border-radius: 0.313rem;
   text-align: left;
+}
+
+.start-button.timer-on {
+  padding-left: 18%;
+  background-color: #e66158;
 }
 
 .start-button:hover {

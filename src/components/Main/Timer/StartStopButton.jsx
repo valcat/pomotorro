@@ -12,15 +12,8 @@ export function StartStopButton() {
     <div>
       <div
         data-testid="toggle-pomodoro"
-        className="start-button"
-        style={{
-          paddingLeft: timerOn ? '18%' : '24%',
-          backgroundColor: timerOn ? '#31519d87' : '#e66158',
-          cursor: 'pointer',
-        }}
-        onClick={() => {
-          toggle();
-        }}
+        className={`start-button ${timerOn ? 'timer-on' : ''}`}
+        onClick={toggle}
       >
         <span>
           <img className="start-button-icon" src={pomodoroStartBtn}></img>
