@@ -2,13 +2,11 @@
   box-sizing: border-box;
   width: 18.75rem;
   max-height: 37.5rem;
-  margin: auto;
-
-  margin-bottom: 7rem;
+  margin: auto auto 7rem;
   text-align: center;
   background: var(--white-background-color);
   border: var(--grey-object-border);
-  box-shadow: var(--light-grey-shadow);
+  box-shadow: var(--light-grey-object-shadow);
   border-radius: 0.625rem;
   padding: 1.25rem;
 }
@@ -19,7 +17,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .pomo-card {
     margin-top: 2.5rem;
   }

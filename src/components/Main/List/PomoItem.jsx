@@ -1,5 +1,4 @@
 import { useDispatch } from 'react-redux';
-
 import { PomoItemEditInput } from './PomoItemEditInput';
 import { editTaskDecription, setEditedTaskIndex, deleteTask } from '@/store/pomodoroSlice';
 import './PomoItem.css';

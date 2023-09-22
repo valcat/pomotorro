@@ -13,7 +13,7 @@
 }
 
 .pomo-logo img:hover {
-  filter: drop-shadow(0 0 0.8em #bb2626);
+  filter: drop-shadow(0 0 0.2em #bb2626);
 }
 
 .pomo-logo img {

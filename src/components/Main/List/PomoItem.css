@@ -44,3 +44,7 @@
     padding: 0 0.25rem;
   }
 }
+
+.pomo-text {
+  font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Segoe UI', sans-serif;
+}
