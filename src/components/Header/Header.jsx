@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import logoImg from '@/assets/logo.svg'
+import GoogleSignInBtn from '@components/Header/GoogleSignInBtn.jsx';
 
 export default function Header() {
   return (
@@ -12,6 +13,7 @@ export default function Header() {
           </span>
           <span className="pomo-log_text">pomotorro</span>
         </div>
+        <GoogleSignInBtn />
       </div>
     </div>
   );

@@ -6,9 +6,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pomotorro</title>
+    <script src="https://accounts.google.com/gsi/client" async></script>
+
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+
+      <div id="g_id_onload"
+           data-client_id="16313022696-uovegnopad1mj5qo5gqcq6a1oll17kmu.apps.googleusercontent.com"
+           data-context="signin"
+           data-ux_mode="popup"
+           data-callback="function handleCallbackResponse(response) {   console.log('info is: ', response.credentials);   };"
+           data-itp_support="true">
+      </div>
+
+      <div class="g_id_signin"
+           data-type="standard"
+           data-shape="rectangular"
+           data-theme="outline"
+           data-text="signin_with"
+           data-size="large"
+           data-logo_alignment="left">
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
