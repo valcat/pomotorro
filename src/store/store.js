@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import pomodoroReducer from './pomodoroSlice';
 import storage from 'redux-persist/lib/storage';
 import { persistReducer, persistStore } from 'redux-persist';
-import thunk from 'redux-thunk';
+import thunkMiddleware from 'redux-thunk';
 
 const persistConfig = {
   key: 'root',
@@ -13,7 +13,7 @@ const persistedReducer = persistReducer(persistConfig, pomodoroReducer);
 
 export const store = configureStore({
   reducer: persistedReducer,
-  middleware: [thunk]
+  middleware: [thunkMiddleware]
 });
 
 export const persistor = persistStore(store)
