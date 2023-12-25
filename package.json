@@ -27,7 +27,7 @@
     "redux-thunk": "^3.1.0",
     "redux": "^5.0.0",
     "redux-persist": "^6.0.0",
-    "vitest": "^1.0.4"
+    "vitest": "^1.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.45",
