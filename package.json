@@ -36,6 +36,6 @@
     "@vitest/coverage-v8": "^1.6.0",
     "eslint-plugin-react": "^7.34.2",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "vite": "^5.2.11"
+    "vite": "^5.2.13"
   }
 }
